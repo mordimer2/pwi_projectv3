@@ -1,1 +1,1 @@
-web: gunicorn pwi_projectv3.wsgi
+web: gunicorn Portfolio.wsgi
