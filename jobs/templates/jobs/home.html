@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="{{lang}}">
 {% load static %}
 <head>
 
@@ -55,27 +55,28 @@
           <a class="nav-link js-scroll-trigger" href="#{{ item }}">{{ item }}</a>
         </li>
         {% endfor %}
-        <hr><hr>
-
-        <form action="language" method="post">
-                {% csrf_token %}
-            <input type="hidden" id="lng" name="lng" value="pl">
-            <input type="submit" class="btn btn-danger" name="btnPL" value="PL" style="width:60px;">
-        </form>
-        <div style="height:2px;"></div>
-        <form action="language" method="post">
-                {% csrf_token %}
-            <input type="hidden" id="lng" name="lng" value="en">
-            <input type="submit" class="btn btn-danger" name="btnENG" value="ENG" style="width:60px;">
-        </form>
-        <div style="height:2px;"></div>
-
-        <form action="#" method="post">
-          {% csrf_token %}
-          <a class="btn btn-danger" style="width:120px; color: white; cursor: pointer;" href="https://github.com/mordimer2/pwi_projectv2">{{ code }}</a>
-      </form>
       </ul>
+      
     </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form action="language" method="post">
+              {% csrf_token %}
+          <input type="hidden" id="lng" name="lng" value="pl">
+          <input type="submit" class="btn btn-danger" name="btnPL" value="PL" style="width:60px;">
+      </form>
+      <div style="width:0.1%;"></div>
+      <form action="language" method="post">
+              {% csrf_token %}
+          <input type="hidden" id="lng2" name="lng" value="en">
+          <input type="submit" class="btn btn-danger" name="btnENG" value="ENG" style="width:60px;">
+      </form>
+      <div style="width:0.1%;"></div>
+
+      <div >
+        {% csrf_token %}
+        <a class="btn btn-danger" style="width:130px; color: white; cursor: pointer;" href="https://github.com/mordimer2/pwi_projectv2">{{ code }}</a>
+      </div>
+     </div>  
   </nav>
 
   <div class="container-fluid p-0">
