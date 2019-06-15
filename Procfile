@@ -1,0 +1,1 @@
+web: gunicorn pwi_projectv3.wsgi
