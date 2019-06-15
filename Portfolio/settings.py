@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'vawuzb)_js)czgqkt$!g!2afic%kvo!jyoa49!hmzx)&_*c0dp')
+SECRET_KEY = os.getenv('SECRET_KEY', 'aa')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'True')=="True"
+DEBUG = os.getenv('DEBUG', 'False')=="True"
 
 # Application definition
 
@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 
 ALLOWED_HOSTS = [
   # TODO: add your Google Cloud Project-ID here
-    'https://mjanuszewskiv2.herokuapp.com/', # must add the app engine (project-id) domain here
+    'mjanuszewskiv2.herokuapp.com', # must add the app engine (project-id) domain here
     '127.0.0.1', # for local testing 
 ]
 
