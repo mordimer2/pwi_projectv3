@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 
 ALLOWED_HOSTS = [
   # TODO: add your Google Cloud Project-ID here
-    'https://michaljanuszewski.herokuapp.com', # must add the app engine (project-id) domain here
+    'https://mjanuszewskiv2.herokuapp.com/', # must add the app engine (project-id) domain here
     '127.0.0.1', # for local testing 
 ]
 
