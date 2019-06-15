@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY ='vawuzb)_js)czgqkt$!g!2afic%kvo!jyoa49!hmzx)&_*c0dp' 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')=="True"
+DEBUG = True
 
 # Application definition
 
@@ -54,7 +53,7 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'jobs/templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,10 +69,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Portfolio.wsgi.application'
 
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = [ '*'
   # TODO: add your Google Cloud Project-ID here
-    'mjanuszewskiv2.herokuapp.com', # must add the app engine (project-id) domain here
-    '127.0.0.1', # for local testing 
+    # 'michaljanuszewskiporfolio.appspot.com', # must add the app engine (project-id) domain here
+    # '127.0.0.1', # for local testing 
 ]
 
 # Database
@@ -84,15 +83,14 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     # }
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': os.environ['DB_NAME'],
-    #     'USER': os.environ['DB_USER'],
-    #     'PASSWORD': os.environ['DB_PASSWORD'], 
-    #     'HOST': os.environ['DB_HOST'],
-    #     'PORT': os.environ['DB_PORT'], //app.listen(process.env.PORT || 3000)
-    # } 
-    
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio_db',
+        'USER': 'postgres',
+        'PASSWORD': 'toor', 
+        'HOST': 'localhost', 
+        'PORT': '5432',
+    }
 }
 
 
@@ -133,12 +131,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 STATIC_URL = '/static/'
-# STATIC_ROOT=os.path.join(BASE_DIR,'static')
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'), # static directory (in the top level directory) for local testing
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'), # static directory (in the top level directory) for local testing
+# ]
 
-django_heroku.settings(locals())

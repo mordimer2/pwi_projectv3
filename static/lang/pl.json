@@ -1,6 +1,9 @@
 {
     "title": "Strona portfolio: Michał Januszewski",
-    "shortDesc": "Jestem doświadczonym programistą w Pythonie. Zatrudnij mnie, proszę.",
+    "cookieTitle": "Ciasteczka!",
+    "cookieDesc": "Moja strona zapisuje malutkie części informacji na twoim urządzeniu (ciasteczka/cookies)  w celu obsługi języków. Możesz zablokowac ciasteczka, wyłączając je w ustawiniach przeglądarki. Jeżeli nie zrobisz tego, traktujemy to jako zgodę na używanie ciasteczek.",
+    "cookieBtn": "Zgadzam się",
+    "shortDesc": "Jestem doświadczonym programistą w Pythonie. Zatrudnij mnie, plis.",
     "sidebar": [
         "Autor",
         "Doświadczenie",
