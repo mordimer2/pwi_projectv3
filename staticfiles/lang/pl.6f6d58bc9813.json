@@ -1,0 +1,22 @@
+{
+    "title": "Strona portfolio: Michał Januszewski",
+    "cookieTitle": "Ciasteczka!",
+    "cookieDesc": "Moja strona zapisuje malutkie części informacji na twoim urządzeniu (ciasteczka/cookies)  w celu obsługi języków. Możesz zablokowac ciasteczka, wyłączając je w ustawiniach przeglądarki. Jeżeli nie zrobisz tego, traktujemy to jako zgodę na używanie ciasteczek.",
+    "cookieBtn": "Zgadzam się",
+    "shortDesc": "Jestem doświadczonym programistą w Pythonie. Zatrudnij mnie, plis.",
+    "sidebar": [
+        "Autor",
+        "Doświadczenie",
+        "Edukacja",
+        "Umiejętności",
+        "Zainteresowania"
+    ] ,
+    "skills": [
+        "Języki programowania i narzędzia",
+        "Przepływ pracy"
+    ],
+    "interests1": "Protaktyn (Pa, łac. protactinium) – pierwiastek chemiczny z grupy aktynowców o liczbie atomowej 91. Jest ciężkim srebrnoszarym metalem, łatwo reagującym z tlenem, parą wodną i kwasami nieorganicznymi. Tworzy związki chemiczne, w których jest zazwyczaj na V stopniu utlenienia, ale może także przyjmować II, III i IV stopień. Średnie stężenie protaktynu w skorupie ziemskiej jest zazwyczaj rzędu kilku ppt, ale może osiągać stężenia do kilku ppm w pewnych złożach rud uraninitowych. Ze względu na rzadkość, wysoką radioaktywność i toksyczność, metal ten obecnie nie posiada zastosowania poza badaniami naukowymi, do których pozyskiwany jest ze zużytego paliwa jądrowego.",
+    "interests2": "Protaktyn po raz pierwszy został zidentyfikowany w 1913 roku przez Kazimierza Fajansa i Oswalda Helmutha Göhringa, którzy nazwali go brevium ze względu na krótki czas połowicznego rozpadu badanego izotopu 234Pa. Bardziej stabilny izotop protaktynu został odkryty w 1918 roku, a jego nazwę zmieniono na protoaktyn, a następnie, w 1949 roku, na „protaktyn”, co oznacza „rodzic aktynu” i odnosi się do faktu, że produktem rozpadu protaktynu jest aktyn.",
+    "code": "Kod źródłowy"
+
+}
